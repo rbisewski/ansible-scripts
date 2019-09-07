@@ -4,7 +4,7 @@ If you plan on using the python API features of Ansible then obtaining the
 latest version via pip is the best method:
 
 ```bash
-sudo pip3 install ansible
+sudo pip3 install ansible ansible-lint
 ```
 
 In order to access remote machines, Ansible requires an ssh-agent in order to

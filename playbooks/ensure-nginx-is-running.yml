@@ -1,8 +1,11 @@
 ---
-- hosts: all
+- name: "Ensure nginx servers are running on all hosts."
+  hosts: all
   remote_user: rbisewski
+
   tasks:
-    - service:
+    - name: "sudo systemctl start nginx"
+      service:
         name: nginx
         state: started
       become: yes
